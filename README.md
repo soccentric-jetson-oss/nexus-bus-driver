@@ -13,6 +13,51 @@ The Nexus Bus Driver is a Linux kernel module that provides unified access to al
 - SPI,
 - UART,
 - CAN)
+- GPIO
+- 40-pin
+- expansion
+- header
+- support
+- 8
+- I2C
+- bus
+- controllers
+- 3
+- SPI
+- bus
+- controllers
+- 4
+- UART
+- ports
+- 2
+- CAN
+- bus
+- interfaces
+- (FD
+- supported)
+- Unified
+- ioctl
+- protocol
+- for
+- all
+- bus
+- types
+- Single
+- character
+- device
+- interface
+- Thread-safe
+- userspace
+- C
+- library
+- Comprehensive
+- test
+- suite
+- devres-managed
+- resource
+- allocation
+- GPL-2.0
+- licensed
 
 ## Quick Start
 
@@ -25,16 +70,6 @@ The Nexus Bus Driver is a Linux kernel module that provides unified access to al
 make all      # Build all targets
 make test     # Run tests
 make clean    # Clean build artifacts
-```
-
-## Architecture
-
-```
-Driver (kernel module) ──► Server (gRPC) ──► GUI (PySide6)
-     │                        │                    │
-     ▼                        ▼                    ▼
-  Hardware              C++ Service           Desktop App
-  Access                Layer                 (macOS/Linux/Win)
 ```
 
 ## Repository Structure
@@ -52,10 +87,10 @@ Driver (kernel module) ──► Server (gRPC) ──► GUI (PySide6)
 ## Project Status
 
 **Version:** 0.1.0 — Initial release
-**License:** GPIO 40-pin expansion header support
+**License:** GPL-2.0-only
 **Audit Score:** 90/100
 
-## 🌐 Ecosystem
+## Ecosystem
 
 This project is part of the [Jetson AGX Orin Capability Showcase](https://github.com/soccentric-jetson-oss/soccentric-jetson-oss) — five open-source projects demonstrating full exploitation of NVIDIA's flagship edge AI platform.
 
@@ -65,4 +100,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines. All contributions welcome
 
 ## License
 
-GPIO 40-pin expansion header support. See [LICENSE](LICENSE) for details.
+GPL-2.0-only. See [LICENSE](LICENSE) for details.
