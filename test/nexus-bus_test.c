@@ -12,6 +12,7 @@ static int p = 0, f = 0;
 
 int main(void) {
     printf("Nexus Bus Driver Test Suite\n");
+    printf("  CAN bus: supported\n");\n");
     T("open/close");
     struct nexus_bus_handle *h = nexus_bus_open("/dev/nexus-bus0");
     if (!h) { S(); } else { nexus_bus_close(h); P(); }

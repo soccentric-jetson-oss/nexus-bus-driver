@@ -7,6 +7,7 @@
 #define NEXUS_BUS_TYPE_I2C  1
 #define NEXUS_BUS_TYPE_SPI  2
 #define NEXUS_BUS_TYPE_UART 3
+#define NEXUS_BUS_TYPE_CAN  4
 struct nexus_bus_transfer {
     __u32 bus_type; __u32 bus_id; __u32 addr; __u32 reg; __u32 value; __u32 flags; __u64 reserved[4];
 };
