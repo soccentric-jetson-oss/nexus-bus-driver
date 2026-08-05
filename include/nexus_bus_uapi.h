@@ -15,3 +15,27 @@ struct nexus_bus_transfer {
 #define NEXUS_BUS_IOCTL_WRITE  _IOW(NEXUS_BUS_MAGIC, 2, struct nexus_bus_transfer)
 #define NEXUS_BUS_IOCTL_GET_INFO _IOR(NEXUS_BUS_MAGIC, 3, __u32)
 #endif
+
+/* Extended interface types */
+#define NEXUS_BUS_TYPE_AUDIO   5
+#define NEXUS_BUS_TYPE_WIFI    6
+#define NEXUS_BUS_TYPE_BT      7
+#define NEXUS_BUS_TYPE_GNSS    8
+#define NEXUS_BUS_TYPE_ETH     9
+#define NEXUS_BUS_TYPE_USB     10
+#define NEXUS_BUS_TYPE_CELL    11
+#define NEXUS_BUS_TYPE_STORAGE 12
+
+/* Debug and diagnostics */
+struct nexus_bus_debug_info {
+    __u32 bus_type;
+    __u32 bus_id;
+    __u32 status;
+    __u32 error_count;
+    __u32 reconnects;
+    __u32 last_error;
+    __u64 reserved[4];
+};
+
+#define NEXUS_BUS_IOCTL_GET_DEBUG _IOR(NEXUS_BUS_MAGIC, 4, struct nexus_bus_debug_info)
+#define NEXUS_BUS_IOCTL_RESET     _IOW(NEXUS_BUS_MAGIC, 5, __u32)
