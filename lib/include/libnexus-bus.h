@@ -1,6 +1,14 @@
 #ifndef LIBNEXUS_BUS_H
 #define LIBNEXUS_BUS_H
 #include <stdint.h>
+
+/* Bus types */
+#define NEXUS_BUS_TYPE_GPIO 0
+#define NEXUS_BUS_TYPE_I2C  1
+#define NEXUS_BUS_TYPE_SPI  2
+#define NEXUS_BUS_TYPE_UART 3
+#define NEXUS_BUS_TYPE_CAN  4
+
 #ifdef __cplusplus
 extern "C" {
 #endif
