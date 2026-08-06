@@ -107,7 +107,7 @@ static void __exit nexus_bus_exit(void)
 }
 module_init(nexus_bus_init);
 module_exit(nexus_bus_exit);
-MODULE_AUTHOR("Sandesh <sandesh@soccentric.com>");
+MODULE_AUTHOR("Sandesh Ghimire <sandesh@soccentric.com>");
 MODULE_DESCRIPTION("Jetson AGX Orin peripheral bus driver");
 MODULE_LICENSE("GPL v2");
 MODULE_VERSION(DRV_VERSION);

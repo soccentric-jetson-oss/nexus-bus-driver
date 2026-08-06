@@ -1,0 +1,16 @@
+# SPDX-License-Identifier: GPL-2.0-only
+---
+BasedOnStyle: LLVM
+IndentWidth: 4
+UseTab: Never
+BreakBeforeBraces: Allman
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+ColumnLimit: 100
+PointerAlignment: Left
+SpaceAfterCStyleCast: true
+IndentCaseLabels: true
+AlignAfterOpenBracket: Align
+SortIncludes: true
+...
